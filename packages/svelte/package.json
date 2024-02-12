@@ -1,0 +1,49 @@
+{
+  "name": "techno4-svelte",
+  "version": "0.1.2",
+  "description": "Build full featured iOS & Android apps using techno4 & Svelte",
+  "type": "module",
+  "svelte": "./techno4-svelte.js",
+  "exports": {
+    ".": "./techno4-svelte.js",
+    "./components/*": "./components/*",
+    "./shared/*": "./shared/*"
+  },
+  "typings": "techno4-svelte.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://terminal.techno4.online/T4Public/techno4-framework.git"
+  },
+  "keywords": [
+    "svelte",
+    "mobile",
+    "framework",
+    "techno4",
+    "cordova",
+    "ios",
+    "iphone",
+    "ipad",
+    "apple",
+    "phonegap",
+    "capacitor",
+    "native",
+    "touch",
+    "appstore",
+    "app",
+    "t4",
+    "material",
+    "android",
+    "google",
+    "googleplay"
+  ],
+  "author": "Techno4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://#"
+  },
+  "homepage": "https://techno4.online",
+  "funding": {
+    "type": "patreon",
+    "url": "https://#"
+  }
+}

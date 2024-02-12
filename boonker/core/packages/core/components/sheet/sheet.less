@@ -1,0 +1,195 @@
+/* === Sheet Modal === */
+@import './sheet-vars.less';
+.sheet-backdrop {
+  z-index: 11000;
+  &-unique {
+    z-index: 12500;
+  }
+}
+.sheet-modal {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: var(--t4-sheet-height);
+  display: none;
+  box-sizing: border-box;
+  transition-property: transform;
+  transform: translate3d(0, 100%, 0);
+  background: var(--t4-sheet-bg-color);
+  z-index: 12500;
+  will-change: transform, opacity;
+  &.modal-in,
+  &.modal-out {
+    transition-duration: var(--t4-sheet-transition-duration);
+  }
+  &.not-animated {
+    transition-duration: 0ms;
+  }
+  &.modal-in {
+    display: block;
+    transform: translate3d(0, 0, 0);
+  }
+  &.modal-in-swipe-step {
+    display: block;
+    transform: translate3d(0, var(--t4-sheet-swipe-step, 0), 0);
+  }
+  &.modal-out {
+    transform: translate3d(0, 100%, 0);
+  }
+  .sheet-modal-inner {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .toolbar {
+    --t4-safe-area-bottom: 0px;
+    position: relative;
+    width: 100%;
+    &:after,
+    &:before {
+      display: none;
+    }
+    + .sheet-modal-inner {
+      height: calc(100% - var(--t4-toolbar-height));
+      .page-content {
+        --t4-page-toolbar-top-offset: 0px;
+        --t4-page-toolbar-bottom-offset: 0px;
+      }
+    }
+  }
+}
+.sheet-modal-top {
+  .hairline(bottom, var(--t4-sheet-border-color));
+  &:after {
+    z-index: 700;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+}
+.sheet-modal-bottom,
+.sheet-modal:not(.sheet-modal-top) {
+  --t4-safe-area-top: 0px;
+  .hairline(top, var(--t4-sheet-border-color));
+  &:before {
+    z-index: 700;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+}
+.sheet-modal-top {
+  --t4-safe-area-bottom: 0px;
+  bottom: auto;
+  top: 0;
+  transform: translate3d(0, -100%, 0);
+  &.modal-out {
+    transform: translate3d(0, -100%, 0);
+  }
+  .toolbar-bottom {
+    position: absolute;
+  }
+  .page-content {
+    padding-top: var(--t4-safe-area-top);
+  }
+}
+
+html.with-modal-sheet-push,
+html.with-modal-sheet-push-closing {
+  .sheet-modal-push {
+    --t4-sheet-border-color: transparent;
+    border-radius: var(--t4-sheet-push-border-radius) var(--t4-sheet-push-border-radius) 0 0;
+    overflow: hidden;
+    .view,
+    .page {
+      --t4-safe-area-top: 0px;
+    }
+    &.sheet-modal-top {
+      border-radius: 0 0 var(--t4-sheet-push-border-radius) var(--t4-sheet-push-border-radius);
+    }
+  }
+  .techno4-root {
+    background: #000;
+    > .views,
+    > .view {
+      transition-duration: var(--t4-sheet-transition-duration);
+    }
+  }
+  .if-dark-theme({
+    &.dark .techno4-root > .views,
+    &.dark .techno4-root > .view,
+    .dark .techno4-root > .views,
+    .dark .techno4-root > .view,
+    .dark.techno4-root > .views,
+    .dark.techno4-root > .view,
+    .techno4-root > .views.dark,
+    .techno4-root > .view.dark {
+      &:after {
+        content: '';
+        position: absolute;
+        pointer-events: none;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.1);
+        z-index: 13000;
+        border-radius: var(--t4-sheet-push-border-radius) var(--t4-sheet-push-border-radius) 0 0;
+        opacity: 1;
+        animation: sheet-dark-push-overlay-fade-in var(--t4-sheet-transition-duration) forwards;
+      }
+    }
+  });
+}
+html.with-modal-sheet-push {
+  .techno4-root {
+    > .views,
+    > .view {
+      border-radius: var(--t4-sheet-push-border-radius);
+      transform: translate3d(0, 0, 0px) scale(var(--t4-sheet-push-scale, 1)) !important;
+    }
+  }
+}
+
+.if-dark-theme({
+  html.with-modal-sheet-push-closing {
+    &.dark .techno4-root > .views,
+    &.dark .techno4-root > .view,
+    .dark .techno4-root > .views,
+    .dark .techno4-root > .view,
+    .dark.techno4-root > .views,
+    .dark.techno4-root > .view,
+    .techno4-root > .views.dark,
+    .techno4-root > .view.dark {
+      &:after {
+        animation: sheet-dark-push-overlay-fade-out var(--t4-sheet-transition-duration) forwards;
+      }
+    }
+  }
+
+  @keyframes sheet-dark-push-overlay-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes sheet-dark-push-overlay-fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+});
+
+.if-ios-theme({
+  @import './sheet-ios.less';
+});
+.if-md-theme({
+  @import './sheet-md.less';
+});
+.if-aurora-theme({
+  @import './sheet-aurora.less';
+});

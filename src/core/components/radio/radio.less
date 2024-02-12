@@ -1,0 +1,57 @@
+/* === Radio === */
+@import './radio-vars.less';
+.radio {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+  --t4-touch-ripple-color: rgba(var(--t4-theme-color-rgb), 0.5);
+}
+.icon-radio {
+  width: var(--t4-radio-size);
+  height: var(--t4-radio-size);
+  border-radius: var(--t4-radio-border-radius);
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  flex-shrink: 0;
+}
+.radio .icon-radio,
+.md .icon-radio,
+.aurora .icon-radio {
+  border: var(--t4-radio-border-width) solid var(--t4-radio-inactive-color);
+}
+label.item-radio,
+.radio {
+  cursor: pointer;
+  input[type='checkbox'],
+  input[type='radio'] {
+    display: none;
+  }
+}
+label.item-radio {
+  transition-duration: 300ms;
+  .item-content,
+  &.item-content {
+    .item-media {
+      align-self: center;
+    }
+  }
+  &.active-state {
+    .hairline-color(bottom, transparent);
+    background-color: var(--t4-list-link-pressed-bg-color);
+  }
+  &.disabled,
+  .disabled & {
+    .disabled();
+  }
+}
+.if-ios-theme({
+  @import './radio-ios.less';
+});
+.if-md-theme({
+  @import './radio-md.less';
+});
+.if-aurora-theme({
+  @import './radio-aurora.less';
+});

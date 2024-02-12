@@ -1,0 +1,69 @@
+// t4-parallax
+.router-transition-t4-parallax-forward {
+  .page-next {
+    animation: t4-parallax-next-to-current var(--t4-page-parallax-transition-duration) forwards;
+  }
+  .page-current {
+    animation: t4-parallax-current-to-prev var(--t4-page-parallax-transition-duration) forwards;
+  }
+}
+.router-transition-t4-parallax-backward {
+  .page-current {
+    animation: t4-parallax-current-to-next var(--t4-page-parallax-transition-duration) forwards;
+  }
+  .page-previous {
+    animation: t4-parallax-prev-to-current var(--t4-page-parallax-transition-duration) forwards;
+  }
+}
+@keyframes t4-parallax-next-to-current {
+  from {
+    .ltr({
+      transform: translateX(100%);
+    });
+    .rtl({
+      transform: translateX(-100%);
+    });
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+@keyframes t4-parallax-current-to-next {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    .ltr({
+      transform: translateX(100%);
+    });
+    .rtl({
+      transform: translateX(-100%);
+    });
+  }
+}
+@keyframes t4-parallax-current-to-prev {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    .ltr({
+      transform: translateX(-20%);
+    });
+    .rtl({
+      transform: translateX(20%);
+    });
+  }
+}
+@keyframes t4-parallax-prev-to-current {
+  from {
+    .ltr({
+      transform: translateX(-20%);
+    });
+    .rtl({
+      transform: translateX(20%);
+    });
+  }
+  to {
+    transform: translateX(-0%);
+  }
+}

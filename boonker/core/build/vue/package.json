@@ -1,0 +1,6 @@
+{
+  "name": "techno4-vue",
+  "private": true,
+  "module": "techno4-vue.js",
+  "typings": "techno4-vue.d.ts"
+}

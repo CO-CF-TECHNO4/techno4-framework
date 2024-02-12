@@ -1,0 +1,42 @@
+/* === Tooltip === */
+@import './tooltip-vars.less';
+
+.tooltip {
+  position: absolute;
+  z-index: 20000;
+  background: var(--t4-tooltip-bg-color);
+  border-radius: var(--t4-tooltip-border-radius);
+  padding: var(--t4-tooltip-padding);
+  color: var(--t4-tooltip-text-color);
+  font-size: var(--t4-tooltip-font-size);
+  font-weight: var(--t4-tooltip-font-weight);
+  box-sizing: border-box;
+  line-height: 1.2;
+  opacity: 0;
+  transform: scale(0.9);
+  transition-duration: 150ms;
+  transition-property: opacity, transform;
+  z-index: 99000;
+  &.tooltip-in {
+    transform: scale(1);
+    opacity: 1;
+  }
+  &.tooltip-out {
+    opacity: 0;
+    transform: scale(1);
+  }
+  .device-desktop & {
+    font-size: var(--t4-tooltip-desktop-font-size);
+    padding: var(--t4-tooltip-desktop-padding);
+  }
+}
+
+.if-ios-theme({
+  @import './tooltip-ios.less';
+});
+.if-md-theme({
+  @import './tooltip-md.less';
+});
+.if-aurora-theme({
+  @import './tooltip-aurora.less';
+});

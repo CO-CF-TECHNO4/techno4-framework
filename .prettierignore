@@ -1,0 +1,15 @@
+build
+node_modules
+packages
+
+src/core/less/vars.less
+src/core/modules/component/htm.js
+src/core/modules/component/snabbdom
+boonker/core/css/app.css
+boonker/react/dist
+boonker/vue/dist
+boonker/svelte/dist
+boonker/**/*.json
+src/vue-temp
+.nova
+

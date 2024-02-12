@@ -1,0 +1,100 @@
+/* === Breadcrumbs === */
+@import './breadcrumbs-vars.less';
+
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: var(--t4-breadcrumbs-font-size);
+  overflow: auto;
+  white-space: nowrap;
+  padding: var(--t4-breadcrumbs-padding);
+  &::-webkit-scrollbar {
+    display: none;
+    opacity: 0;
+  }
+}
+.breadcrumbs-separator,
+.breadcrumbs-item,
+.breadcrumbs-collapsed {
+  flex-shrink: 0;
+  --t4-touch-ripple-color: transparent !important;
+  & + & {
+    margin-left: var(--t4-breadcrumbs-spacing);
+  }
+}
+.breadcrumbs-item {
+  color: var(--t4-breadcrumbs-item-color);
+  font-weight: var(--t4-breadcrumbs-item-font-weight);
+  padding: var(--t4-breadcrumbs-item-padding);
+  background-color: var(--t4-breadcrumbs-item-bg-color);
+  display: flex;
+  align-items: center;
+  .icon {
+    font-size: var(--t4-breadcrumbs-icon-size);
+    width: var(--t4-breadcrumbs-icon-size);
+    height: var(--t4-breadcrumbs-icon-size);
+  }
+  a {
+    color: inherit;
+    --t4-touch-ripple-color: transparent !important;
+  }
+  &-active {
+    color: var(--t4-breadcrumbs-item-active-color, var(--t4-breadcrumbs-item-color));
+    font-weight: var(--t4-breadcrumbs-item-active-font-weight);
+  }
+}
+.breadcrumbs-separator {
+  color: var(--t4-breadcrumbs-separator-color);
+  height: 24px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  &::after {
+    .core-icons-font();
+    content: var(--t4-breadcrumbs-separator-icon);
+    width: 12px;
+  }
+  .ios &::after {
+    font-size: 12px;
+    height: 11px;
+  }
+  .md &::after {
+    font-size: 18px;
+    height: 18px;
+  }
+  .aurora &::after {
+    font-size: 12px;
+    height: 11px;
+  }
+}
+.breadcrumbs-collapsed {
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  background: var(--t4-breadcrumbs-collapsed-bg-color);
+  height: 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  &::before,
+  &::after,
+  span {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background: var(--t4-breadcrumbs-collapsed-color);
+    border-radius: 50%;
+  }
+  span {
+    margin: 0 3px;
+  }
+}
+.if-ios-theme({
+  @import './breadcrumbs-ios.less';
+});
+.if-md-theme({
+  @import './breadcrumbs-md.less';
+});
+.if-aurora-theme({
+  @import './breadcrumbs-aurora.less';
+});

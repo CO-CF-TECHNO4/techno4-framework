@@ -1,0 +1,233 @@
+:root {
+  --t4-list-inset-side-margin: 16px;
+  --t4-list-item-cell-margin: 16px;
+  --t4-list-item-padding-horizontal: 16px;
+  --t4-list-item-padding-vertical: 8px;
+  --t4-list-media-item-padding-horizontal: 16px;
+  --t4-list-item-text-max-lines: 2;
+  --t4-list-chevron-icon-font-size: 20px;
+  --t4-list-item-media-margin: 16px;
+
+  --t4-list-item-title-font-size: inherit;
+  --t4-list-item-title-font-weight: 400;
+  --t4-list-item-title-text-color: inherit;
+  --t4-list-item-title-line-height: inherit;
+  --t4-list-item-title-white-space: nowrap;
+
+  --t4-list-item-subtitle-font-weight: 400;
+  --t4-list-item-subtitle-text-color: inherit;
+  --t4-list-item-subtitle-line-height: inherit;
+
+  --t4-list-item-text-font-weight: 400;
+  --t4-list-item-after-font-weight: 400;
+  --t4-list-item-after-line-height: inherit;
+
+  --t4-list-item-header-text-color: inherit;
+  --t4-list-item-header-font-size: 12px;
+  --t4-list-item-header-font-weight: 400;
+  --t4-list-item-header-line-height: 1.2;
+
+  --t4-list-item-footer-font-size: 12px;
+  --t4-list-item-footer-font-weight: 400;
+  --t4-list-item-footer-line-height: 1.2;
+
+  /*
+  --t4-list-button-text-color: var(--t4-theme-color);
+  --t4-list-button-pressed-bg-color: rgba(var(--t4-theme-color-rgb), .15);
+  */
+  --t4-list-button-font-size: inherit;
+  --t4-list-button-font-weight: 400;
+  --t4-list-button-text-align: center;
+
+  --t4-list-item-divider-line-height: inherit;
+  --t4-list-item-divider-font-weight: 400;
+  --t4-list-group-title-line-height: inherit;
+
+  --t4-menu-list-offset: 8px;
+  --t4-menu-list-border-radius: 8px;
+  --t4-menu-list-font-size: 14px;
+  --t4-menu-list-item-title-font-size: 14px;
+  --t4-menu-list-item-title-font-weight: 500;
+  --t4-menu-list-item-subtitle-font-size: 14px;
+  --t4-menu-list-item-text-font-size: 14px;
+  --t4-menu-list-item-after-font-size: 14px;
+
+  .light-vars({
+    --t4-list-bg-color: #fff;
+    --t4-list-chevron-icon-color: rgba(0, 0, 0, 0.2);
+    --t4-menu-list-selected-text-color: var(--t4-theme-color);
+    --t4-menu-list-selected-bg-color: rgba(var(--t4-theme-color-rgb), 0.15);
+  });
+  .dark-vars({
+    --t4-list-button-border-color: rgba(255, 255, 255, 0.15);
+    --t4-list-bg-color: #1c1c1d;
+    --t4-list-border-color: rgba(255, 255, 255, 0.15);
+    --t4-list-item-border-color: rgba(255, 255, 255, 0.15);
+    --t4-list-item-divider-border-color: rgba(255, 255, 255, 0.15);
+    --t4-list-item-divider-bg-color: #232323;
+    --t4-list-group-title-bg-color: #232323;
+    --t4-list-chevron-icon-color: rgba(255, 255, 255, 0.3);
+    --t4-menu-list-selected-text-color: inherit;
+    --t4-menu-list-selected-bg-color: var(--t4-theme-color);
+  });
+}
+.ios-vars({
+  --t4-list-in-list-padding-left: 30px;
+  --t4-list-inset-border-radius: 8px;
+  --t4-list-margin-vertical: 35px;
+  --t4-list-font-size: 17px;
+  --t4-list-chevron-icon-area: 20px;
+  --t4-list-border-color: rgba(0,0,0,0.22);
+  --t4-list-item-border-color: rgba(0,0,0,0.22);
+  --t4-list-link-pressed-bg-color: rgba(0,0,0,0.15);
+
+  --t4-list-item-subtitle-font-size: 15px;
+
+  --t4-list-item-text-font-size: 15px;
+  --t4-list-item-text-line-height: 21px;
+
+  --t4-list-item-after-font-size: inherit;
+  --t4-list-item-after-padding: 5px;
+
+  --t4-list-item-min-height: 44px;
+  --t4-list-item-media-icons-margin: 5px;
+  --t4-list-media-item-padding-vertical: 10px;
+  --t4-list-media-item-title-font-weight: 600;
+  --t4-list-button-border-color: rgba(0,0,0,0.22);
+
+  --t4-list-item-divider-height: 31px;
+  --t4-list-item-divider-font-size: inherit;
+  --t4-list-item-divider-bg-color: rgba(0,0,0,0.03);
+  --t4-list-item-divider-border-color: rgba(0,0,0,0.22);
+
+  --t4-list-group-title-height: 31px;
+  --t4-list-group-title-font-size: inherit;
+  --t4-list-group-title-font-weight: 400;
+  --t4-list-group-title-bg-color: #t4t4t4;
+  .light-vars({
+    --t4-list-item-after-text-color: rgba(0,0,0,0.45);
+    --t4-list-item-footer-text-color: rgba(0,0,0,0.45);
+    --t4-list-item-text-text-color: rgba(0,0,0,0.45);
+    --t4-list-item-divider-text-color: rgba(0,0,0,0.45);
+    --t4-list-group-title-text-color: rgba(0,0,0,0.45);
+  });
+  .dark-vars({
+    --t4-list-item-after-text-color: rgba(255,255,255,0.55);
+    --t4-list-item-header-text-color: rgba(255,255,255,0.55);
+    --t4-list-item-footer-text-color: rgba(255,255,255,0.55);
+    --t4-list-item-text-text-color: rgba(255,255,255,0.55);
+    --t4-list-item-divider-text-color: rgba(255,255,255,0.55);
+    --t4-list-group-title-text-color: rgba(255,255,255,0.55);
+    --t4-list-link-pressed-bg-color: rgba(255, 255, 255, 0.08);
+  });
+});
+.md-vars({
+  --t4-list-in-list-padding-left: 40px;
+  --t4-list-inset-border-radius: 4px;
+  --t4-list-margin-vertical: 32px;
+  --t4-list-font-size: 16px;
+  --t4-list-chevron-icon-area: 26px;
+  --t4-list-border-color: rgba(0,0,0,0.12);
+  --t4-list-item-border-color: rgba(0,0,0,0.12);
+
+  --t4-list-item-subtitle-font-size: 14px;
+
+  --t4-list-item-text-font-size: 14px;
+  --t4-list-item-text-line-height: 20px;
+
+  --t4-list-item-after-font-size: 14px;
+  --t4-list-item-after-padding: 8px;
+
+
+  --t4-list-item-min-height: 48px;
+  --t4-list-item-media-icons-margin: 8px;
+  --t4-list-media-item-padding-vertical: 14px;
+  /*
+  --t4-list-media-item-title-font-weight: var(--t4-list-item-title-font-weight);
+  */
+  --t4-list-button-border-color: transparent;
+
+  --t4-list-item-divider-height: 48px;
+  --t4-list-item-divider-font-size: 14px;
+  --t4-list-item-divider-bg-color: #f4f4f4;
+  --t4-list-item-divider-border-color: transparent;
+
+  --t4-list-group-title-height: 48px;
+  --t4-list-group-title-font-size: 14px;
+  --t4-list-group-title-font-weight: 400;
+  --t4-list-group-title-bg-color: #f4f4f4;
+  --t4-menu-list-border-radius: 4px;
+  .light-vars({
+    --t4-list-link-pressed-bg-color: rgba(0,0,0,0.1);
+    --t4-list-item-text-text-color: rgba(0,0,0,0.54);
+    --t4-list-item-after-text-color: rgba(0,0,0,0.54);
+    --t4-list-item-footer-text-color: rgba(0,0,0,0.5);
+    --t4-list-item-divider-text-color: rgba(0,0,0,0.54);
+    --t4-list-group-title-text-color: rgba(0,0,0,0.54);
+  });
+  .dark-vars({
+    --t4-list-item-divider-text-color: #fff;
+    --t4-list-group-title-text-color: #fff;
+    --t4-list-link-pressed-bg-color: rgba(255,255,255,0.05);
+    --t4-list-item-text-text-color: rgba(255,255,255,0.54);
+    --t4-list-item-after-text-color: rgba(255,255,255,0.54);
+    --t4-list-item-footer-text-color: rgba(255,255,255,0.54);
+  });
+});
+.aurora-vars({
+  --t4-list-in-list-padding-left: 16px;
+  --t4-list-inset-border-radius: 8px;
+  --t4-list-margin-vertical: 32px;
+  --t4-list-font-size: 16px;
+  --t4-list-chevron-icon-area: 20px;
+  --t4-list-border-color: rgba(0,0,0,0.12);
+  --t4-list-item-border-color: rgba(0,0,0,0.12);
+
+  --t4-list-item-subtitle-font-size: 14px;
+
+  --t4-list-item-text-font-size: 14px;
+  --t4-list-item-text-line-height: 20px;
+
+  --t4-list-item-after-font-size: 14px;
+  --t4-list-item-after-padding: 8px;
+
+
+  --t4-list-item-min-height: 48px;
+  --t4-list-item-media-icons-margin: 8px;
+  --t4-list-media-item-padding-vertical: 16px;
+  --t4-list-media-item-title-font-weight: 600;
+
+  --t4-list-button-border-color: rgba(0,0,0,0.12);
+  --t4-list-button-font-weight: 500;
+
+  --t4-list-item-divider-height: 32px;
+  --t4-list-item-divider-font-size: 14px;
+  --t4-list-item-divider-bg-color: rgba(0,0,0,0.03);
+  --t4-list-item-divider-border-color: transparent;
+
+  --t4-list-group-title-height: 32px;
+  --t4-list-group-title-font-size: 14px;
+  --t4-list-group-title-font-weight: 500;
+  --t4-list-group-title-bg-color: #t4t4t4;
+
+  .light-vars({
+    --t4-list-link-pressed-bg-color: rgba(0,0,0,0.1);
+    --t4-list-link-hover-bg-color: rgba(0,0,0,0.03);
+    --t4-list-item-text-text-color: rgba(0,0,0,0.6);
+    --t4-list-item-after-text-color: rgba(0,0,0,0.5);
+    --t4-list-item-footer-text-color: rgba(0,0,0,0.6);
+    --t4-list-button-hover-bg-color: rgba(0,0,0,0.03);
+    --t4-list-item-divider-text-color: rgba(0,0,0,0.6);
+    --t4-list-group-title-text-color: rgba(0,0,0,0.6);
+  });
+  .dark-vars({
+    --t4-list-item-text-text-color: rgba(255,255,255,0.54);
+    --t4-list-item-after-text-color: rgba(255,255,255,0.54);
+    --t4-list-item-footer-text-color: rgba(255,255,255,0.54);
+    --t4-list-item-divider-text-color: rgba(255,255,255,0.6);
+    --t4-list-group-title-text-color: rgba(255,255,255,0.6);
+    --t4-list-link-pressed-bg-color: rgba(255,255,255,0.05);
+    --t4-list-link-hover-bg-color: rgba(255,255,255,0.03);
+    --t4-list-button-hover-bg-color: rgba(255,255,255,0.03);
+  });
+});

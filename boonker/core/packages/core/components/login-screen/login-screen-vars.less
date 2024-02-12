@@ -1,0 +1,32 @@
+:root {
+  --t4-login-screen-blocks-max-width: 480px;
+  /*
+   --t4-login-screen-list-button-text-color: var(--t4-theme-color);
+   */
+  --t4-login-screen-title-text-align: center;
+  --t4-login-screen-title-text-color: inherit;
+  --t4-login-screen-title-letter-spacing: 0;
+  --t4-login-screen-title-font-weight: 600;
+  --t4-login-screen-title-font-size: 28px;
+  .light-vars({
+    --t4-login-screen-content-bg-color: #fff;
+    --t4-login-screen-bg-color: #fff;
+  });
+  .dark-vars({
+    --t4-login-screen-bg-color: #121212;
+    --t4-login-screen-content-bg-color: #121212;
+  });
+}
+.ios-vars({
+  --t4-login-screen-blocks-margin-vertical: 25px;
+  .dark-vars({
+    --t4-login-screen-bg-color: #000;
+    --t4-login-screen-content-bg-color: #000;
+  });
+});
+.md-vars({
+  --t4-login-screen-blocks-margin-vertical: 24px;
+});
+.aurora-vars({
+  --t4-login-screen-blocks-margin-vertical: 16px;
+});

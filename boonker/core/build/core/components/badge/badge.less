@@ -1,0 +1,47 @@
+/* === Badge === */
+@import './badge-vars.less';
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: var(--t4-badge-text-color);
+  background: var(--t4-badge-bg-color);
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: var(--t4-badge-font-weight);
+  font-size: var(--t4-badge-font-size);
+  border-radius: var(--t4-badge-size);
+  padding: var(--t4-badge-padding);
+  height: var(--t4-badge-size);
+  min-width: var(--t4-badge-size);
+
+  .icon &,
+  .t4-icons &,
+  .techno4-icons &,
+  .material-icons & {
+    position: absolute;
+    left: 100%;
+    margin-left: -10px;
+    top: -2px;
+    font-family: var(--t4-font-family);
+    --t4-badge-font-size: var(--t4-badge-in-icon-font-size);
+    --t4-badge-size: var(--t4-badge-in-icon-size);
+  }
+}
+.badge[class*='color-'] {
+  --t4-badge-bg-color: var(--t4-theme-color);
+}
+
+.if-ios-theme({
+  @import './badge-ios.less';
+});
+.if-md-theme({
+  @import './badge-md.less';
+});
+.if-aurora-theme({
+  @import './badge-aurora.less';
+});

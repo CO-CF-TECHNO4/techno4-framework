@@ -1,0 +1,54 @@
+:root {
+  --t4-text-editor-font-size: inherit;
+  --t4-text-editor-font-weight: inherit;
+  --t4-text-editor-border-width: 1px;
+  --t4-text-editor-height: 250px;
+  --t4-text-editor-margin: 16px;
+  --t4-text-editor-padding: 8px;
+  --t4-text-editor-button-bg-color: transparent;
+  --t4-text-editor-button-size: 28px;
+  --t4-text-editor-button-icon-size: 20px;
+  --t4-text-editor-button-margin: 2px;
+  --t4-text-editor-button-border-radius: 2px;
+  .light-vars({
+    --t4-text-editor-text-color: #000;
+    --t4-text-editor-bg-color: #fff;
+    --t4-text-editor-border-color: rgba(0,0,0,0.1);
+    --t4-text-editor-toolbar-bg-color: #fff;
+    --t4-text-editor-button-text-color: #333;
+    --t4-text-editor-button-divider-color: rgba(0,0,0,0.15);
+    --t4-text-editor-placeholder-color: rgba(0,0,0,0.35);
+  });
+  .dark-vars({
+    --t4-text-editor-bg-color: #121212;
+    --t4-text-editor-border-color: rgba(255,255,255,0.1);
+    --t4-text-editor-toolbar-bg-color: #202020;
+    --t4-text-editor-text-color: #fff;
+    --t4-text-editor-placeholder-color: rgba(255,255,255,0.35);
+    --t4-text-editor-button-text-color: #fff;
+    --t4-text-editor-button-divider-color: rgba(255,255,255,0.15);
+  });
+}
+.ios-vars({
+  --t4-text-editor-toolbar-padding: 6px;
+  .light-vars({
+    --t4-text-editor-toolbar-border-color: rgba(0,0,0,0.25);
+  });
+  .dark-vars({
+    --t4-text-editor-toolbar-bg-color: #121212;
+    --t4-text-editor-toolbar-border-color: rgba(255,255,255,0.1);
+  });
+});
+.md-vars({
+  --t4-text-editor-toolbar-padding: 8px;
+  --t4-text-editor-toolbar-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.25);
+});
+.aurora-vars({
+  --t4-text-editor-toolbar-padding: 8px;
+  .light-vars({
+    --t4-text-editor-toolbar-border-color: rgba(0,0,0,0.25);
+  });
+  .dark-vars({
+    --t4-text-editor-toolbar-border-color: rgba(255,255,255,0.1);
+  });
+});

@@ -1,0 +1,14 @@
+.md {
+  // Buttons
+  .button {
+    transition-duration: 300ms;
+    transform: translate3d(0, 0, 0);
+  }
+  .button-fill,
+  .button-fill-md {
+    --t4-button-pressed-bg-color: var(
+      --t4-button-fill-pressed-bg-color,
+      var(--t4-theme-color-shade)
+    );
+  }
+}

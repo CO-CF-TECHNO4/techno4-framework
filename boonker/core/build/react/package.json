@@ -1,0 +1,6 @@
+{
+  "name": "techno4-react",
+  "private": true,
+  "module": "techno4-react.js",
+  "typings": "techno4-react.d.ts"
+}

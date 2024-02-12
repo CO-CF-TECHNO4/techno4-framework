@@ -1,0 +1,129 @@
+:root {
+  --t4-input-bg-color: transparent;
+  --t4-label-font-weight: 400;
+  --t4-label-line-height: 1.3;
+  --t4-input-padding-left: 0px;
+  --t4-input-padding-right: 0px;
+  --t4-input-error-text-color: #ff3b30;
+  --t4-input-error-font-size: 12px;
+  --t4-input-error-line-height: 1.4;
+  --t4-input-error-font-weight: 400;
+  --t4-input-info-font-size: 12px;
+  --t4-input-info-line-height: 1.4;
+  --t4-input-outline-height: 40px;
+
+  --t4-input-outline-border-radius: 4px;
+  --t4-input-outline-padding-horizontal: 12px;
+  --t4-textarea-height: 100px;
+  /*
+  --t4-input-outline-focused-border-color: var(--t4-theme-color);
+  --t4-input-outline-invalid-border-color: var(--t4-input-error-text-color);
+  */
+  .light-vars({
+    --t4-input-outline-border-color: #bbb;
+  });
+  .dark-vars({
+    --t4-input-outline-border-color: #444;
+  });
+}
+.ios-vars({
+  --t4-input-height: 44px;
+  --t4-input-font-size: 17px;
+  --t4-input-placeholder-color: #a9a9a9;
+  --t4-textarea-padding-vertical: 11px;
+
+  /*
+  --t4-input-focused-border-color: var(--t4-list-item-border-color);
+  --t4-input-invalid-border-color: var(--t4-list-item-border-color);
+  --t4-input-invalid-text-color: var(--t4-input-error-text-color);
+  */
+  --t4-label-font-size: 12px;
+  --t4-label-text-color: inherit;
+  /*
+  --t4-label-focused-text-color: var(--t4-label-text-color);
+  --t4-label-invalid-text-color: var(--t4-label-text-color);
+  */
+  --t4-floating-label-scale: calc(17 / 12);
+  --t4-inline-label-font-size: 17px;
+  --t4-inline-label-line-height: 1.4;
+  --t4-inline-label-padding-top: 3px;
+  --t4-input-clear-button-size: 14px;
+  .light-vars({
+    --t4-input-text-color: #000000;
+    --t4-input-info-text-color: rgba(0,0,0,0.45);
+    --t4-input-clear-button-color: rgba(0,0,0,0.45);
+  });
+  .dark-vars({
+    --t4-input-text-color: #fff;
+    --t4-input-info-text-color: rgba(255,255,255,0.55);
+    --t4-input-clear-button-color: rgba(255,255,255,0.5);
+  });
+});
+.md-vars({
+  --t4-input-height: 36px;
+  --t4-input-font-size: 16px;
+  --t4-textarea-padding-vertical: 7px;
+  /*
+  --t4-input-focused-border-color: var(--t4-theme-color);
+  --t4-input-invalid-border-color: var(--t4-input-error-text-color);
+  --t4-input-invalid-text-color: var(--t4-input-text-color);
+  */
+  --t4-label-font-size: 12px;
+  /*
+  --t4-label-focused-text-color: var(--t4-theme-color);
+  --t4-label-invalid-text-color: var(--t4-input-error-text-color );
+  */
+  --t4-floating-label-scale: calc(16 / 12);
+  --t4-inline-label-font-size: 16px;
+  --t4-inline-label-line-height: 1.5;
+  --t4-inline-label-padding-top: 7px;
+  --t4-input-clear-button-size: 18px;
+  --t4-input-clear-button-color: #aaa;
+  .light-vars({
+    --t4-input-text-color: #212121;
+    --t4-input-placeholder-color: rgba(0,0,0,0.35);
+    --t4-label-text-color: rgba(0,0,0,.65);
+    --t4-input-info-text-color: rgba(0,0,0,.45);
+
+  });
+  .dark-vars({
+    --t4-input-text-color: rgba(255,255,255,0.87);
+    --t4-input-placeholder-color: rgba(255,255,255,.35);
+    --t4-label-text-color: rgba(255,255,255,.54);
+    --t4-input-info-text-color: rgba(255,255,255,.45);
+  });
+});
+.aurora-vars({
+  --t4-input-height: 32px;
+  --t4-input-font-size: 16px;
+  --t4-textarea-padding-vertical: 4px;
+  /*
+  --t4-input-focused-border-color: var(--t4-theme-color);
+  --t4-input-invalid-border-color: var(--t4-input-error-text-color);
+  --t4-input-invalid-text-color: var(--t4-input-text-color);
+  */
+  --t4-label-font-size: 12px;
+  --t4-label-text-color: inherit;
+  /*
+  --t4-label-focused-text-color: var(--t4-theme-color);
+  --t4-label-invalid-text-color: var(--t4-input-error-text-color );
+  */
+  --t4-floating-label-scale: calc(16 / 12);
+  --t4-inline-label-font-size: 16px;
+  --t4-inline-label-line-height: 1.5;
+  --t4-inline-label-padding-top: 4px;
+  --t4-input-clear-button-size: 14px;
+  --t4-input-outline-border-radius: 8px;
+  .light-vars({
+    --t4-input-text-color: #000000;
+    --t4-input-placeholder-color: rgba(0,0,0,0.32);
+    --t4-input-clear-button-color: rgba(0,0,0,0.45);
+    --t4-input-info-text-color: rgba(0,0,0,0.5);
+  });
+  .dark-vars({
+    --t4-input-text-color: #fff;
+    --t4-input-clear-button-color: rgba(255,255,255,.5);
+    --t4-input-placeholder-color: rgba(255,255,255,.35);
+    --t4-input-info-text-color: rgba(255,255,255,0.45);
+  });
+});

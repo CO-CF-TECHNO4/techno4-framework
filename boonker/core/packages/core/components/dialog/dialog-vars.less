@@ -1,0 +1,143 @@
+:root {
+  --t4-dialog-button-text-color: var(--t4-theme-color);
+  --t4-dialog-button-text-align: center;
+  .light-vars({
+    --t4-dialog-input-bg-color:  #fff;
+  });
+  .dark-vars({
+    --t4-dialog-text-color: #fff;
+  });
+}
+.ios-vars({
+  --t4-dialog-box-shadow: none;
+  --t4-dialog-width: 270px;
+  --t4-dialog-inner-padding: 16px;
+  --t4-dialog-border-radius: 13px;
+  --t4-dialog-text-align: center;
+  --t4-dialog-font-size: 14px;
+  --t4-dialog-title-text-color: inherit;
+  --t4-dialog-title-font-size: 18px;
+  --t4-dialog-title-font-weight: 600;
+  --t4-dialog-title-line-height: inherit;
+
+  --t4-dialog-button-font-size: 17px;
+  --t4-dialog-button-height: 44px;
+  --t4-dialog-button-letter-spacing: 0;
+  --t4-dialog-button-font-weight: 400;
+  --t4-dialog-button-text-transform: none;
+
+  --t4-dialog-input-border-radius: 4px;
+  --t4-dialog-input-font-size: 14px;
+  --t4-dialog-input-height: 32px;
+  --t4-dialog-input-border-width: 1px;
+  --t4-dialog-input-placeholder-color: #a9a9a9;
+
+  --t4-dialog-preloader-size: 34px;
+
+  .light-vars({
+    --t4-dialog-bg-color: rgba(255,255,255,0.95);
+    --t4-dialog-bg-color-rgb: 255, 255, 255;
+    --t4-dialog-text-color: #000;
+    --t4-dialog-button-pressed-bg-color: rgba(0,0,0,0.1);
+    --t4-dialog-input-border-color: rgba(0,0,0,0.3);
+    --t4-dialog-border-divider-color: rgba(0,0,0,0.2);
+  });
+  .dark-vars({
+    --t4-dialog-bg-color: rgba(45,45,45,0.95);
+    --t4-dialog-bg-color-rgb: 45, 45, 45;
+    --t4-dialog-button-pressed-bg-color: rgba(0,0,0,0.2);
+    --t4-dialog-border-divider-color: rgba(255,255,255,0.15);
+    --t4-dialog-input-border-color: rgba(255,255,255,0.15);
+    --t4-dialog-input-bg-color: rgba(0,0,0,0.5);
+  });
+});
+.md-vars({
+  --t4-dialog-box-shadow: var(--t4-elevation-24);
+  --t4-dialog-width: 280px;
+  --t4-dialog-inner-padding: 24px;
+  --t4-dialog-border-radius: 4px;
+  .ltr({
+    --t4-dialog-text-align: left;
+  });
+  .rtl({
+    --t4-dialog-text-align: right;
+  });
+  --t4-dialog-font-size: 16px;
+  --t4-dialog-title-font-size: 20px;
+  --t4-dialog-title-font-weight: 500;
+  --t4-dialog-title-line-height: 1.3;
+
+  --t4-dialog-button-font-size: 14px;
+  --t4-dialog-button-height: 36px;
+  --t4-dialog-button-letter-spacing: 0.05em;
+  --t4-dialog-button-font-weight: 500;
+  --t4-dialog-button-text-transform: uppercase;
+  --t4-dialog-button-pressed-bg-color: rgba(var(--t4-theme-color-rgb), 0.15);
+
+  --t4-dialog-input-border-radius: 0px;
+  --t4-dialog-input-font-size: 16px;
+  --t4-dialog-input-height: 36px;
+  --t4-dialog-input-border-color: transparent;
+  --t4-dialog-input-border-width: 0px;
+
+  --t4-dialog-preloader-size: 32px;
+  .light-vars({
+    --t4-dialog-bg-color: #fff;
+    --t4-dialog-text-color: rgba(0,0,0,0.54);
+    --t4-dialog-title-text-color: #212121;
+    --t4-dialog-input-placeholder-color: rgba(0,0,0,0.35);
+  });
+  .dark-vars({
+    --t4-dialog-bg-color: #1c1c1d;
+    --t4-dialog-title-text-color: #fff;
+    --t4-dialog-input-bg-color: transparent;
+    --t4-dialog-input-placeholder-color: rgba(255,255,255,0.54);
+  });
+
+});
+.aurora-vars({
+  --t4-dialog-box-shadow: 0 0 20px 0 rgba(0,0,0,0.15), 0 25px 30px 0 rgba(0,0,0,0.35);
+  --t4-dialog-width: 300px;
+  --t4-dialog-inner-padding: 20px;
+  --t4-dialog-border-radius: 8px;
+  .ltr({
+    --t4-dialog-text-align: left;
+  });
+  .rtl({
+    --t4-dialog-text-align: right;
+  });
+  --t4-dialog-font-size: 14px;
+  --t4-dialog-title-font-size: 18px;
+  --t4-dialog-title-font-weight: 700;
+  --t4-dialog-title-line-height: inherit;
+
+  --t4-dialog-button-font-size: 14px;
+  --t4-dialog-button-height: 36px;
+  --t4-dialog-button-letter-spacing: 0;
+  --t4-dialog-button-font-weight: 600;
+  --t4-dialog-button-text-transform: uppercase;
+  /*
+  --t4-dialog-button-pressed-bg-color: var(--t4-theme-color-shade);
+  --t4-dialog-button-hover-bg-color: var(--t4-theme-color-tint);
+  */
+  --t4-dialog-input-border-radius: 8px;
+  --t4-dialog-input-font-size: 16px;
+  --t4-dialog-input-height: 32px;
+  --t4-dialog-input-border-width: 1px;
+  --t4-dialog-preloader-size: 24px;
+  .light-vars({
+    --t4-dialog-bg-color: #fff;
+    --t4-dialog-title-text-color: inherit;
+    --t4-dialog-text-color: #000;
+    --t4-dialog-button-text-color: #fff;
+    --t4-dialog-input-border-color: rgba(0,0,0,0.2);
+    --t4-dialog-input-placeholder-color: rgba(0,0,0,0.32);
+  });
+  .dark-vars({
+    --t4-dialog-bg-color: #1c1c1d;
+    --t4-dialog-title-text-color: #fff;
+    --t4-dialog-input-bg-color: rgba(0,0,0,0.25);
+    --t4-dialog-input-placeholder-color: rgba(255,255,255,0.54);
+    --t4-dialog-input-border-color: rgba(255,255,255,0.15);
+  });
+});

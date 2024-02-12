@@ -1,0 +1,36 @@
+.ios {
+  .stepper-button,
+  .stepper-button-minus,
+  .stepper-button-plus {
+    .t4-icons {
+      font-size: 22px;
+    }
+  }
+  .stepper-fill,
+  .stepper-fill-ios {
+    --t4-stepper-button-pressed-bg-color: var(
+      --t4-stepper-fill-button-pressed-bg-color,
+      var(--t4-theme-color-tint)
+    );
+  }
+
+  .stepper-small,
+  .stepper-small-ios {
+    &.stepper-raised,
+    &.stepper-raised-ios {
+      --t4-stepper-border-width: 0px;
+    }
+    .stepper-button,
+    .stepper-button-minus,
+    .stepper-button-plus {
+      transition-duration: 200ms;
+      &.active-state {
+        &:after,
+        &:before {
+          transition-duration: 200ms;
+          background-color: var(--t4-theme-color);
+        }
+      }
+    }
+  }
+}

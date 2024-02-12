@@ -1,0 +1,51 @@
+{
+  "name": "techno4-vue",
+  "version": "0.1.2",
+  "description": "Build full featured iOS & Android apps using techno4 & Vue",
+  "type": "module",
+  "exports": {
+    ".": "./techno4-vue.js",
+    "./bundle": "./techno4-vue-bundle.js",
+    "./components/*": "./components/*",
+    "./shared/*": "./shared/*"
+  },
+  "typings": "techno4-vue.d.ts",
+  "web-types": "techno4-vue-web-types.json",
+  "repository": {
+    "type": "git",
+    "url": "https://terminal.techno4.online/T4Public/techno4-framework.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "mobile",
+    "framework",
+    "techno4",
+    "cordova",
+    "ios",
+    "iphone",
+    "ipad",
+    "apple",
+    "phonegap",
+    "capacitor",
+    "native",
+    "touch",
+    "appstore",
+    "app",
+    "t4",
+    "material",
+    "android",
+    "google",
+    "googleplay"
+  ],
+  "author": "Techno4",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://#"
+  },
+  "homepage": "https://techno4.online",
+  "funding": {
+    "type": "patreon",
+    "url": "https://#"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "techno4",
+  "private": true,
+  "main": "techno4.esm.js",
+  "module": "techno4.esm.js",
+  "jsnext:main": "techno4.esm.js",
+  "typings": "techno4.d.ts",
+  "sideEffects": [
+    "*.less",
+    "*.css",
+    "shared/dom64.js"
+  ]
+}

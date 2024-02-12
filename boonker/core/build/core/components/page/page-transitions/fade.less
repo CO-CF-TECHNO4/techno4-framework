@@ -1,0 +1,44 @@
+// fade
+.router-transition-t4-fade-forward,
+.router-transition-t4-fade-backward {
+  background: var(--t4-page-bg-color);
+}
+.router-transition-t4-fade-forward {
+  .page-next {
+    opacity: 0 !important;
+    animation: t4-fade-in var(--t4-page-fade-transition-duration) forwards;
+  }
+  .page-current {
+    animation: t4-fade-out var(--t4-page-fade-transition-duration) forwards;
+  }
+}
+.router-transition-t4-fade-backward {
+  .page-current {
+    animation: t4-fade-out var(--t4-page-fade-transition-duration) forwards;
+  }
+  .page-previous {
+    animation: t4-fade-in var(--t4-page-fade-transition-duration) forwards;
+  }
+}
+@keyframes t4-fade-in {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes t4-fade-out {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}

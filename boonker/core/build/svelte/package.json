@@ -1,0 +1,7 @@
+{
+  "name": "techno4-svelte",
+  "private": true,
+  "module": "techno4-svelte.js",
+  "svelte": "techno4-svelte-src.js",
+  "typings": "techno4-svelte.d.ts"
+}

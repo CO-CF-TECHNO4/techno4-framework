@@ -1,0 +1,122 @@
+:root {
+  --t4-calendar-height: 340px;
+  --t4-calendar-sheet-landscape-height: 220px;
+  --t4-calendar-popover-width: 320px;
+  --t4-calendar-popover-height: 320px;
+  --t4-calendar-modal-height: 420px;
+  --t4-calendar-modal-max-width: 380px;
+  --t4-calendar-modal-border-radius: 4px;
+  /*
+  --t4-calendar-header-bg-color: var(--t4-bars-bg-color);
+  --t4-calendar-header-link-color: var(--t4-bars-link-color);
+  --t4-calendar-header-text-color: var(--t4-bars-text-color);
+  --t4-calendar-footer-bg-color: var(--t4-bars-bg-color);
+  --t4-calendar-footer-border-color: var(--t4-bars-border-color);
+  --t4-calendar-footer-link-color: var(--t4-bars-link-color);
+  --t4-calendar-footer-text-color: var(--t4-bars-text-color);
+  */
+  --t4-calendar-week-header-bg-color: transparent;
+  --t4-calendar-footer-padding: 0 8px;
+  --t4-calendar-week-header-font-size: 11px;
+  --t4-calendar-selected-text-color: #fff;
+  /*
+  --t4-calendar-selected-bg-color:  var(--t4-theme-color);
+  */
+  --t4-calendar-disabled-text-color: #d4d4d4;
+  --t4-calendar-event-dot-size: 4px;
+  /*
+  --t4-calendar-event-bg-color: var(--t4-theme-color);
+  */
+  /*
+  --t4-calendar-picker-selected-text-color: var(--t4-theme-color);
+  */
+  --t4-calendar-time-selector-height: 28px;
+  .light-vars({
+    --t4-calendar-week-header-text-color: #5e5e5e;
+    --t4-calendar-prev-next-text-color: #c8c8c8;
+    --t4-calendar-day-text-color:  #000;
+    --t4-calendar-sheet-bg-color: #fff;
+    --t4-calendar-modal-bg-color: #fff;
+    --t4-calendar-picker-pressed-bg-color: rgba(0,0,0,0.1);
+    --t4-calendar-picker-hover-bg-color: rgba(0,0,0,0.03);
+    --t4-calendar-time-selector-bg-color: rgba(0,0,0,0.05);
+  });
+  .dark-vars({
+    --t4-calendar-week-header-text-color: #aaa;
+    --t4-calendar-prev-next-text-color: #5e5e5e;
+    --t4-calendar-sheet-border-color: var(--t4-bars-border-color);
+    --t4-calendar-modal-bg-color: #121212;
+    --t4-calendar-sheet-bg-color: #121212;
+    --t4-calendar-picker-pressed-bg-color: rgba(255,255,255,0.08);
+    --t4-calendar-picker-hover-bg-color: rgba(255,255,255,0.03);
+    --t4-calendar-time-selector-bg-color: rgba(255,255,255,0.1);
+  });
+}
+.ios-vars({
+  --t4-calendar-sheet-border-color: #929499;
+  --t4-calendar-header-height: 44px;
+  --t4-calendar-header-font-size: 17px;
+  --t4-calendar-header-font-weight: 600;
+  --t4-calendar-header-padding: 0 8px;
+  --t4-calendar-footer-height: 44px;
+  --t4-calendar-footer-font-size: 17px;
+  --t4-calendar-week-header-height: 18px;
+  --t4-calendar-day-font-size: 15px;
+  --t4-calendar-day-size: 30px;
+  --t4-calendar-picker-font-size: 17px;
+  --t4-calendar-time-selector-font-size: 17px;
+  .light-vars({
+    --t4-calendar-today-text-color: #000;
+    --t4-calendar-today-bg-color: #e3e3e3;
+  });
+  .dark-vars({
+    --t4-calendar-day-text-color: #fff;
+    --t4-calendar-today-text-color: #fff;
+    --t4-calendar-today-bg-color: #333;
+  });
+});
+.md-vars({
+  --t4-calendar-sheet-border-color: #ccc;
+  --t4-calendar-header-height: 56px;
+  --t4-calendar-header-font-size: 20px;
+  --t4-calendar-header-font-weight: 400;
+  --t4-calendar-header-padding: 0 24px;
+  --t4-calendar-footer-height: 48px;
+  --t4-calendar-footer-font-size: 14px;
+  --t4-calendar-week-header-height: 24px;
+  --t4-calendar-day-font-size: 14px;
+  /*
+  --t4-calendar-today-text-color: var(--t4-theme-color);
+  */
+  --t4-calendar-today-bg-color: none;
+  --t4-calendar-day-size: 32px;
+  --t4-calendar-picker-font-size: 14px;
+  --t4-calendar-time-selector-font-size: 14px;
+  .dark-vars({
+    --t4-calendar-day-text-color: rgba(255,255,255,0.87);
+  });
+});
+.aurora-vars({
+  --t4-calendar-sheet-border-color: #ccc;
+  --t4-calendar-header-height: 56px;
+  --t4-calendar-header-font-size: 18px;
+  --t4-calendar-header-font-weight: 600;
+  --t4-calendar-header-padding: 0 16px;
+  --t4-calendar-footer-height: 48px;
+  --t4-calendar-footer-font-size: 14px;
+  --t4-calendar-footer-padding: 0 16px;
+  --t4-calendar-week-header-height: 24px;
+  --t4-calendar-day-font-size: 14px;
+  --t4-calendar-day-size: 32px;
+  --t4-calendar-picker-font-size: 16px;
+  --t4-calendar-time-selector-font-size: 14px;
+  .light-vars({
+    --t4-calendar-today-text-color: #000;
+    --t4-calendar-today-bg-color: #e3e3e3;
+  });
+  .dark-vars({
+    --t4-calendar-day-text-color: #fff;
+    --t4-calendar-today-text-color: #fff;
+    --t4-calendar-today-bg-color: #333;
+  });
+});

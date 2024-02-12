@@ -1,0 +1,31 @@
+:root {
+  /*
+  --t4-radio-active-color: var(--t4-theme-color);
+  */
+  --t4-radio-border-radius: 50%;
+  --t4-radio-extra-margin: 0px;
+  .dark-vars({
+    --t4-radio-inactive-color: rgba(255, 255, 255, 0.3);
+  });
+}
+.ios-vars({
+  --t4-radio-size: 22px;
+  --t4-radio-border-width: 1px;
+  .light-vars({
+    --t4-radio-inactive-color: #c7c7cc;
+  })
+});
+.md-vars({
+  --t4-radio-size: 20px;
+  --t4-radio-border-width: 2px;
+  .light-vars({
+    --t4-radio-inactive-color: #6d6d6d;
+  })
+});
+.aurora-vars({
+  --t4-radio-size: 16px;
+  --t4-radio-border-width: 1px;
+  .light-vars({
+    --t4-radio-inactive-color: rgba(0,0,0,0.25);
+  })
+});
