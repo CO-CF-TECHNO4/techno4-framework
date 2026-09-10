@@ -1,0 +1,33 @@
+:root {
+  --t4-login-screen-blocks-max-width: 480px;
+  --t4-login-screen-title-text-align: center;
+  --t4-login-screen-title-text-color: inherit;
+  --t4-login-screen-title-letter-spacing: 0;
+}
+.ios-vars({
+  --t4-login-screen-blocks-margin-vertical: 25px;
+  --t4-login-screen-transition-timing-function: initial;
+  --t4-login-screen-transition-duration: 400ms;
+  --t4-login-screen-title-font-weight: 600;
+  --t4-login-screen-title-font-size: 28px;
+  .light-vars({
+    --t4-login-screen-content-bg-color: #fff;
+    --t4-login-screen-bg-color: #fff;
+  });
+  .dark-vars({
+    --t4-login-screen-bg-color: #000;
+    --t4-login-screen-content-bg-color: #000;
+  });
+});
+.md-vars({
+  --t4-login-screen-transition-duration: 600ms;
+  --t4-login-screen-transition-timing-function: cubic-bezier(0, 1, 0.2, 1);
+  --t4-login-screen-blocks-margin-vertical: 24px;
+  --t4-login-screen-title-font-weight: 400;
+  --t4-login-screen-title-font-size: 28px;
+});
+
+.md-color-vars({
+  --t4-login-screen-content-bg-color: var(--t4-md-surface);
+  --t4-login-screen-bg-color: var(--t4-md-surface);
+});

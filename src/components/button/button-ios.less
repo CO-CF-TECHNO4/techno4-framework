@@ -1,0 +1,21 @@
+.ios {
+  // Buttons
+  .button {
+    transition-duration: 100ms;
+    &.active-state {
+      background-color: var(--t4-button-pressed-bg-color, rgba(var(--t4-theme-color-rgb), 0.15));
+    }
+  }
+  .button-fill,
+  .button-fill-ios {
+    --t4-button-pressed-bg-color: var(
+      --t4-button-fill-pressed-bg-color,
+      var(--t4-theme-color-tint)
+    );
+  }
+
+  .button-small,
+  .button-small-ios {
+    transition-duration: 200ms;
+  }
+}

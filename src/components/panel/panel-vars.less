@@ -1,0 +1,27 @@
+:root {
+  --t4-panel-width: 288px;
+  --t4-panel-backdrop-bg-color: rgba(0, 0, 0, 0.3);
+  /*
+  --t4-panel-left-width: var(--t4-panel-width);
+  --t4-panel-right-width: var(--t4-panel-width);
+  --t4-panel-left-collapsed-width: var(--t4-panel-collapsed-width);
+  --t4-panel-right-collapsed-width: var(--t4-panel-collapsed-width);
+  */
+}
+.ios-vars({
+  --t4-panel-floating-border-radius: 32px;
+  --t4-panel-collapsed-width: 58px;
+  --t4-panel-transition-duration: 400ms;
+  --t4-panel-transition-timing-function: initial;
+  --t4-panel-bg-color: var(--t4-glass-bg-color);
+});
+.md-vars({
+  --t4-panel-floating-border-radius: 16px;
+  --t4-panel-collapsed-width: 60px;
+  --t4-panel-transition-duration: 400ms;
+  --t4-panel-transition-timing-function: cubic-bezier(0, 0.8, 0.34, 1);
+  --t4-panel-bg-color: #fff;
+  .dark-vars({
+    --t4-panel-bg-color: #000;
+  });
+});

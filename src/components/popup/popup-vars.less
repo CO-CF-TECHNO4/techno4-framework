@@ -1,0 +1,21 @@
+:root {
+  --t4-popup-border-radius: 0px;
+  --t4-popup-tablet-width: 630px;
+  --t4-popup-tablet-height: 630px;
+  --t4-popup-push-offset: var(--t4-safe-area-top);
+  /*
+  --t4-popup-tablet-border-radius: var(--t4-popup-border-radius);
+  */
+}
+.ios-vars({
+  --t4-popup-tablet-border-radius: 32px;
+  --t4-popup-transition-duration: 400ms;
+  --t4-popup-transition-timing-function: initial;
+  --t4-popup-push-border-radius: 32px;
+});
+.md-vars({
+  --t4-popup-tablet-border-radius: 28px;
+  --t4-popup-transition-duration: 600ms;
+  --t4-popup-transition-timing-function: cubic-bezier(0, 1, 0.2, 1);
+  --t4-popup-push-border-radius: 28px;
+});

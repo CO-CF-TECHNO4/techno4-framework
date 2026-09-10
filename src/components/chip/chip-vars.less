@@ -1,0 +1,42 @@
+:root {
+  --t4-chip-font-size: 14px;
+  --t4-chip-media-font-size: 16px;
+  .light-vars({
+    --t4-chip-delete-button-color: #000;
+  });
+  .dark-vars({
+    --t4-chip-delete-button-color: #fff;
+  });
+}
+.ios-vars({
+  --t4-chip-height: 28px;
+  --t4-chip-media-size: 28px;
+  --t4-chip-padding-horizontal: 10px;
+  --t4-chip-border-radius: 28px;
+  --t4-chip-font-weight: normal;
+  .light-vars({
+    --t4-chip-outline-border-color: rgba(0, 0, 0, 0.12);
+    --t4-chip-bg-color: rgba(0, 0, 0, 0.12);
+    --t4-chip-text-color: #000;
+    --t4-chip-outline-text-color: #000;
+  });
+  .dark-vars({
+    --t4-chip-bg-color: #333;
+    --t4-chip-text-color: #fff;
+    --t4-chip-outline-text-color: #fff;
+    --t4-chip-outline-border-color: rgba(255, 255, 255, 0.12);
+  });
+});
+.md-vars({
+  --t4-chip-font-weight: 500;
+  --t4-chip-media-size: 24px;
+  --t4-chip-height: 32px;
+  --t4-chip-padding-horizontal: 12px;
+  --t4-chip-border-radius: 8px;
+});
+.md-color-vars({
+  --t4-chip-bg-color: var(--t4-md-secondary-container);
+  --t4-chip-text-color: var(--t4-md-on-secondary-container);
+  --t4-chip-outline-text-color: var(--t4-md-on-surface);
+  --t4-chip-outline-border-color: var(--t4-md-outline);
+});

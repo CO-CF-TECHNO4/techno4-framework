@@ -1,0 +1,91 @@
+:root {
+  --t4-dialog-button-text-color: var(--t4-theme-color);
+  --t4-dialog-button-text-align: center;
+  --t4-dialog-text-line-height: 1.5;
+}
+.ios-vars({
+
+  --t4-dialog-width: 270px;
+  --t4-dialog-inner-padding: 24px;
+  --t4-dialog-border-radius: 32px;
+  --t4-dialog-text-align: left;
+  --t4-dialog-font-size: 14px;
+  --t4-dialog-title-text-color: inherit;
+  --t4-dialog-title-font-size: 17px;
+  --t4-dialog-title-font-weight: 600;
+  --t4-dialog-title-line-height: inherit;
+
+  --t4-dialog-button-font-size: 17px;
+  --t4-dialog-button-height: 44px;
+  --t4-dialog-button-letter-spacing: 0;
+  --t4-dialog-button-font-weight: 400;
+  --t4-dialog-button-text-transform: none;
+  --t4-dialog-button-strong-bg-color: transparent;
+  --t4-dialog-button-strong-text-color: var(--t4-theme-color);
+  --t4-dialog-button-strong-font-weight: 500;
+
+  --t4-dialog-input-border-radius: 16px;
+  --t4-dialog-input-font-size: 14px;
+  --t4-dialog-input-height: 40px;
+  --t4-dialog-input-border-width: 1px;
+  --t4-dialog-input-placeholder-color: #a9a9a9;
+
+  --t4-dialog-preloader-size: 34px;
+
+  --t4-dialog-bg-color: var(--t4-glass-bg-color);
+  .light-vars({
+    --t4-dialog-input-bg-color:  #fff;
+    --t4-dialog-bg-color-rgb: 255, 255, 255;
+    --t4-dialog-text-color: #000;
+    --t4-dialog-button-pressed-bg-color: rgba(0,0,0,0.1);
+    --t4-dialog-button-strong-pressed-bg-color: rgba(0,0,0,0.1);
+    --t4-dialog-input-border-color: rgba(0,0,0,0.3);
+  });
+  .dark-vars({
+    --t4-dialog-text-color: #fff;
+    --t4-dialog-bg-color-rgb: 45, 45, 45;
+    --t4-dialog-button-pressed-bg-color: rgba(0,0,0,0.2);
+    --t4-dialog-button-strong-pressed-bg-color: rgba(0,0,0,0.2);
+    --t4-dialog-input-border-color: rgba(255,255,255,0.15);
+    --t4-dialog-input-bg-color: rgba(0,0,0,0.5);
+  });
+});
+.md-vars({
+  --t4-dialog-width: 280px;
+  --t4-dialog-inner-padding: 24px;
+  --t4-dialog-border-radius: 28px;
+  .ltr({
+    --t4-dialog-text-align: left;
+  });
+  .rtl({
+    --t4-dialog-text-align: right;
+  });
+  --t4-dialog-font-size: 14px;
+  --t4-dialog-title-font-size: 24px;
+  --t4-dialog-title-font-weight: 400;
+  --t4-dialog-title-line-height: 1.3;
+  --t4-dialog-button-font-size: 14px;
+  --t4-dialog-button-height: 40px;
+  --t4-dialog-button-letter-spacing: normal;
+  --t4-dialog-button-font-weight: 500;
+  --t4-dialog-button-text-transform: none;
+  --t4-dialog-button-strong-font-weight: 500;
+  --t4-dialog-input-border-radius: 0px;
+  --t4-dialog-input-font-size: 16px;
+  --t4-dialog-input-height: 36px;
+  --t4-dialog-input-border-color: transparent;
+  --t4-dialog-input-border-width: 0px;
+  --t4-dialog-preloader-size: 32px;
+  --t4-dialog-input-bg-color: transparent;
+});
+
+.md-color-vars({
+  --t4-dialog-button-pressed-bg-color: transparent;
+  --t4-dialog-button-strong-bg-color: var(--t4-theme-color);
+  --t4-dialog-button-strong-text-color: var(--t4-md-on-primary);
+  --t4-dialog-button-strong-pressed-bg-color: transparent;
+  --t4-dialog-bg-color: var(--t4-md-surface-3);
+  --t4-dialog-input-placeholder-color: var(--t4-md-on-surface-variant);
+  --t4-dialog-text-color: var(--t4-md-on-surface-variant);
+  --t4-dialog-title-text-color: var(--t4-md-on-surface);
+});

@@ -1,57 +1,59 @@
+# Techno4 Framework Core (`techno4`)
 
-## Techno4 Framework
-Techno4 Framework – бібліотека, яка забезпечує широкі можливості для створення користувацьких інтерфейсів та логіки для застосунків написаних з використанням стандартних вебтехнологій HTML5, CSS3 i JavaScript.
+> Reactive UI Core, VDOM, Web Components, and Unified Techno4 Theme for Modern Web and Hybrid Mobile Applications.
 
-## Системні вимоги
-MacOS Ventura+
-І хоча ви можете редагувати код застосунку на системах Windows i Linux, скомпілювати робочий чи продакшн білди у вас не вийде, так як система має залежності, які працюватимуть лише на операційних системах Apple.
+Part of the **Techno4 Framework 2** ecosystem maintained by **CO «CF TECHNO4»** (`благодійна організація «БЛАГОДІЙНИЙ ФОНД ТЕХНО4»`).
 
-## Залежності
-Для початку встановіть залежності:
+---
 
+## Overview
+
+`techno4` provides an ultra-fast, dependency-free UI runtime with:
+- **Unified Techno4 Theme**: eliminates iOS/MD fragmentation in favor of a cohesive, high-contrast industrial reactive design.
+- **Fast Snabbdom Virtual DOM & Tagged Template Literals**: `$h` and JSX support without React or Vue overhead.
+- **High Performance Routing & Modals**: push/pop view state, sheets, popups, actions, dialogs, dynamic route queues.
+- **Embedded State Store**: reactive state management with subscriptions and computed properties.
+- **Zero Heavy Framework Lock-in**: 100% vanilla JavaScript ES modules.
+
+---
+
+## Installation
+
+```bash
+npm install techno4 dom64
 ```
-$ npm install
+
+---
+
+## Quick Start
+
+```javascript
+import Techno4 from 'techno4';
+import 'techno4/css';
+
+const app = new Techno4({
+  el: '#app',
+  name: 'Techno4 App',
+  theme: 'auto',
+  routes: [
+    {
+      path: '/',
+      url: './pages/home.html',
+    },
+  ],
+});
 ```
 
-### Робочі білди
-Наступні скрипти скомпілюють робочі білди:
+---
 
-- `build:dev` — компіляція всіх типів пакетів (Core, Vue, React, Svelte).
-- `build-core:dev` — компіляція пакетів Core (vanilla JS).
-- `build-react:dev` — компіляція пакетів React.
-- `build-vue:dev` — компіляція пакетів Vue.
-- `build-svelte:dev` — компіляція пакетів Svelte.
+## Documentation
 
-Скомпільовані пакети включно з компонентами будуть розміщені в каталозі `build/`.
+Official documentation and guides:
+- [https://techno4.online/надбання/фреймворк](https://techno4.online/%D0%BD%D0%B0%D0%B4%D0%B1%D0%B0%D0%BD%D0%BD%D1%8F/%D1%84%D1%80%D0%B5%D0%B9%D0%BC%D0%B2%D0%BE%D1%80%D0%BA)
 
-### Продакшн білди
-Наступні скрипти скомпілюють продакшн білди:
+---
 
-- `build:prod` - компіляція всіх типів пакетів (Core, Vue, React, Svelte).
-- `build-core:prod` - компіляція пакетів Core (vanilla JS).
-- `build-react:prod` - компіляція пакетів React.
-- `build-vue:prod` - компіляція пакетів Vue.
-- `build-svelte:prod` - компіляція пакетів Svelte.
+## License
 
-Скомпільовані пакети включно з компонентами будуть розміщені в каталозі `packages/`.
-
-## «Бункер Techno4»
-Бункер Techno4 — скомпільована версія всіх компонентів, яку можна запустити окремим застосунком.
-Для запуску скористайтесь наступними скриптами (спочатку будуть скомпільовані робочі версії):
-
-- `core` - компіляція і запуск робочої версії всіх типів пакетів Бункер Techno4 Core (vanilla JS).
-- `react` - компіляція і запуск робочої версії всіх типів пакетів Бункер Techno4 React.
-- `vue` - компіляція і запуск робочої версії всіх типів пакетів Бункер Techno4 Vue.
-- `svelte` - компіляція і запуск робочої версії всіх типів пакетів Бункер Techno4 Svelte.
-
-## Вихідний код
-Весь вихідний код містить в наступному каталозі `/src/`.
-
-## Стилістика коду
-[.editorconfig](http://editorconfig.org/)
-[ESLint](https://eslint.org/)
-
-## Підтримати проект
-Мета проєкту: мати зручний, гнучкий і надійний набір інструментів для програмування застосунків.
-Підтримати розвиток проєкту можна за посиланням: [Офіційний сайт](https://techno4.online)
-
+Licensed under **LGPL-3.0-or-later** by **CO «CF TECHNO4»** (`благодійна організація «БЛАГОДІЙНИЙ ФОНД ТЕХНО4»`).
+Original base code derived from MIT-licensed open source projects.

@@ -1,0 +1,90 @@
+.ios {
+  .toggle {
+    --t4-toggle-knob-tx: 0px;
+    &::before {
+      content: '';
+      border-radius: inherit;
+      inset: 0;
+      position: absolute;
+      background: var(--t4-toggle-inactive-border-color);
+      transition-duration: 300ms;
+      z-index: 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      transform: translateX(calc(var(--t4-toggle-width) - var(--t4-toggle-height)));
+
+      top: 0;
+      width: var(--t4-toggle-height);
+      height: var(--t4-toggle-height);
+      border-radius: var(--t4-toggle-height);
+      background: var(--t4-toggle-inactive-border-color);
+      transition-duration: 300ms;
+      z-index: 0;
+    }
+    &:has(input[type='checkbox']:checked) {
+      --t4-toggle-knob-tx: calc(var(--t4-toggle-width) - 38px - 4px);
+      &::before {
+        background: var(--t4-toggle-active-bg-color, var(--t4-theme-color));
+      }
+      &::after {
+        background: var(--t4-toggle-active-bg-color, var(--t4-theme-color));
+        transform: translateX(0);
+      }
+    }
+  }
+  .toggle-icon {
+    background: var(--t4-toggle-inactive-knob-bg-color);
+    height: calc(var(--t4-toggle-height) - 4px);
+    width: 38px;
+    top: 2px;
+    .ltr({ left: 2px; });
+    .rtl({ right: 2px; });
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: calc(var(--t4-toggle-height) - 4px);
+    transition-duration: 300ms;
+    .ltr({ transform: translateX(var(--t4-toggle-knob-tx)) scale(1); });
+    .rtl({ transform: translateX(calc(var(--t4-toggle-knob-tx) * -1)) scale(1); });
+    position: relative;
+    z-index: 1;
+    transform-origin: center;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      transition-duration: 300ms;
+      box-shadow: 0px 0px 40px 15px rgba(var(--t4-theme-color-rgb), 0.75);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      box-shadow: var(--t4-glass-shadow-thumb);
+      transition-duration: 300ms;
+      opacity: 0;
+    }
+  }
+  .toggle-active-state {
+    &::before {
+      transform: scale(0.75);
+    }
+    .toggle-icon {
+      background: transparent;
+      .ltr({ transform: translateX(var(--t4-toggle-knob-tx)) scale(1.4); });
+      .rtl({ transform: translateX(calc(var(--t4-toggle-knob-tx) * -1)) scale(1.4); });
+      &::before {
+        opacity: 1;
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
