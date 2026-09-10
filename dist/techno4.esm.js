@@ -12,7 +12,7 @@ import htm from 'htm';
  *
  * Licensed under LGPL-3.0-or-later
  *
- * Released on: September 10, 2026
+ * Released on: September 11, 2026
  */
 
 /* eslint-disable no-proto */
