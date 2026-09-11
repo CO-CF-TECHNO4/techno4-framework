@@ -148,7 +148,7 @@
      * DOM64 – Document Object Model manipulation library.
      * https://techno4.online
      *
-     * Copyright 2026, CO «CF TECHNO4» <office@techno4.online>
+     * Copyright 2026, Mykola Zghurskyi <mykola@techno4.online>
      *
      * Licensed under LGPL-3.0-or-later
      *
