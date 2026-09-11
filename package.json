@@ -22,7 +22,13 @@
       "require": "./dist/techno4.bundle.js",
       "types": "./src/techno4.d.ts"
     },
+    "./bundle": {
+      "import": "./dist/techno4.esm.js",
+      "require": "./dist/techno4.bundle.js",
+      "types": "./src/techno4.d.ts"
+    },
     "./css": "./dist/techno4.bundle.css",
+    "./css/bundle": "./dist/techno4.bundle.css",
     "./package.json": "./package.json"
   },
   "files": [
