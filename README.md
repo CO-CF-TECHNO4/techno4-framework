@@ -2,7 +2,7 @@
 
 > Reactive UI Core, VDOM, Web Components, and Unified Techno4 Theme for Modern Web and Hybrid Mobile Applications.
 
-Part of the **Techno4 Framework 2** ecosystem maintained by **CO «CF TECHNO4»** (`благодійна організація «БЛАГОДІЙНИЙ ФОНД ТЕХНО4»`).
+Part of the **TECHNO4 FRAMEWORK2** ecosystem maintained by **CO «CF TECHNO4»** (`благодійна організація «БЛАГОДІЙНИЙ ФОНД ТЕХНО4»`).
 
 ---
 
